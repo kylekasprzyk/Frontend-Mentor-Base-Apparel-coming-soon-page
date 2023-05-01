@@ -3,7 +3,7 @@
   <h2>
     <a href="https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0"><strong>Frontend Mentor Challenge</strong></a>  </h2>
     <p>
-    <a href="#">My Solution</a>
+    <a href="https://kylekasprzyk.github.io/Frontend-Mentor-Base-Apparel-coming-soon-page/">My Solution</a>
   </p>
 </div>
 
@@ -40,7 +40,7 @@ This is a solution to the [Base Apparel coming soon page challenge on Frontend M
 ## Links
 
 - [Solution URL](#)
-- [Live Site URL](#)
+- [Live Site URL](https://kylekasprzyk.github.io/Frontend-Mentor-Base-Apparel-coming-soon-page/)
 
 ## Built with
 
