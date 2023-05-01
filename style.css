@@ -1,0 +1,282 @@
+:root {
+    /* colors */
+    --desaturated-red: 0 36% 70%;
+    --soft-red: 0 93% 68%;
+    --dark-grayish-red: 0 6% 24%;
+    --white: 0 0% 100%;
+
+    /* font-sizes */
+    --fs-11px: .6875rem;
+    --fs-13px: .8125rem;
+    --fs-14px: .875rem;
+    --fs-16px: 1rem;
+    --fs-40px: 2.5rem;
+    --fs-64px: 4rem;
+
+    /* font-family */
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* reset start */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background: linear-gradient(150.03deg, #FFFFFF 0%, #FFF4F4 84.51%);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button {
+    font: inherit;
+}
+
+p,
+h1,
+h2 {
+    overflow-wrap: break-word;
+}
+
+/* reset end */
+main {
+    display: grid;
+    max-width: 28.125rem;
+    margin: 0 auto;
+}
+
+.logo-img {
+    margin: 2rem;
+}
+
+.hero-img {
+    height: 15.625rem;
+    background-image: url(./images/hero-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.text-container {
+    padding: 4rem 2rem;
+    max-width: 30.625rem;
+    margin: 0 auto;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: var(--fs-40px);
+    line-height: 2.625rem;
+    text-align: center;
+    letter-spacing: .6766rem;
+    color: hsl(var(--dark-grayish-red));
+    text-transform: uppercase;
+}
+
+h1 span {
+    font-weight: 300;
+    color: hsl(var(--desaturated-red));
+}
+
+p {
+    font-weight: 400;
+    font-size: var(--fs-14px);
+    line-height: 1.375rem;
+    text-align: center;
+    color: hsl(var(--desaturated-red));
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+::placeholder {
+    color: hsl(var(--desaturated-red));
+}
+
+.email-container {
+    max-width: 19.4375rem;
+    margin: 0 auto;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    position: relative;
+    top: -2.9375rem;
+    right: -78%;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button img {
+    background: linear-gradient(135deg, #F8BFBF 0%, #EE8B8B 100%);
+    box-shadow: 0rem .9375rem 1.25rem rgba(198, 110, 110, 0.247569);
+    border-radius: 1.75rem;
+    padding: .8125rem 1.625rem;
+    position: relative;
+}
+
+button img:hover {
+    opacity: 0.5;
+}
+
+#email-el {
+    width: 100%;
+    background-color: transparent;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    border: .0625rem solid hsl(var(--desaturated-red));
+    border-radius: 1.75rem;
+    padding: .6875rem 1.5rem .5625rem;
+}
+
+#error-message {
+    position: absolute;
+    font-weight: 400;
+    font-size: var(--fs-13px);
+    line-height: 1.75rem;
+    color: hsl(var(--soft-red));
+    padding-left: 1.5rem;
+}
+
+.error-icon {
+    display: none;
+    position: absolute;
+    bottom: 5.6875rem;
+    left: 65%;
+}
+
+.thank-you-container {
+    display: none;
+    text-align: center;
+}
+
+.attribution {
+    font-size: var(--fs-11px);
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width:1050px) {
+    body {
+        max-width: 90rem;
+        margin: 0 auto;
+        background-color: #FFF4F4;
+        background-image: url(./images/bg-pattern-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    main {
+        display: grid;
+        max-width: 100%;
+    }
+
+    .logo-img {
+        margin: 3.125rem;
+        position: absolute;
+    }
+
+    .hero-img {
+        height: 50rem;
+        background-image: url(./images/hero-desktop.jpg);
+        background-repeat: no-repeat;
+        background-position: right;
+        margin-left: 50%;
+    }
+
+    .text-container {
+        position: absolute;
+        width: 27.8125rem;
+        margin-top: 10.3125rem;
+        margin-left: 3.125rem;
+        padding: 4.125rem 0rem 0rem 0rem;
+    }
+
+    h1 {
+        font-weight: 600;
+        font-size: var(--fs-64px);
+        line-height: 4.4375rem;
+        letter-spacing: 1.0825rem;
+        text-align: left;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: var(--fs-16px);
+        line-height: 1.75rem;
+        text-align: left;
+        padding-bottom: 2.5rem;
+    }
+
+    .email-container {
+        max-width: 100%;
+    }
+
+    button img {
+        padding: 1.125rem 2.875rem;
+        top: -0.625rem;
+        right: 12%;
+    }
+
+    #email-el {
+        padding: .9375rem 2rem;
+    }
+
+    .error-icon {
+        position: absolute;
+        bottom: 5.125rem;
+        left: 68%;
+    }
+
+    .thank-you-container {
+        text-align: left;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .logo-img {
+        margin: 4.0625rem 10.3125rem;
+    }
+
+    .text-container {
+        margin-left: 10.3125rem;
+    }
+
+    #error-message {
+        padding-left: 2rem;
+    }
+}
